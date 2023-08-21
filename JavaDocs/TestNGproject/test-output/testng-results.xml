@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="4" failed="3" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-26T02:31:27 IST" name="Suite" finished-at="2023-07-26T02:31:27 IST" duration-ms="103">
+    <groups>
+      <group name="A">
+        <method signature="TestngDemo1.testcase3()[pri:0, instance:com.qa.testng.listeners.TestngDemo1@4a883b15]" name="testcase3" class="com.qa.testng.listeners.TestngDemo1"/>
+        <method signature="TestngDemo1.testcase1()[pri:0, instance:com.qa.testng.listeners.TestngDemo1@4a883b15]" name="testcase1" class="com.qa.testng.listeners.TestngDemo1"/>
+        <method signature="TestngDemo1.testcase2()[pri:0, instance:com.qa.testng.listeners.TestngDemo1@4a883b15]" name="testcase2" class="com.qa.testng.listeners.TestngDemo1"/>
+      </group> <!-- A -->
+    </groups>
+    <test started-at="2023-07-26T02:31:27 IST" name="TestDemo2" finished-at="2023-07-26T02:31:27 IST" duration-ms="15">
+    </test> <!-- TestDemo2 -->
+    <test started-at="2023-07-26T02:31:27 IST" name="TestDemo1" finished-at="2023-07-26T02:31:27 IST" duration-ms="103">
+      <class name="com.qa.testng.listeners.TestngDemo2">
+        <test-method signature="testcase5()[pri:0, instance:com.qa.testng.listeners.TestngDemo2@6c1a5b54]" started-at="2023-07-26T02:31:27 IST" name="testcase5" finished-at="2023-07-26T02:31:27 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase5 -->
+        <test-method signature="testcase6()[pri:0, instance:com.qa.testng.listeners.TestngDemo2@6c1a5b54]" started-at="2023-07-26T02:31:27 IST" name="testcase6" finished-at="2023-07-26T02:31:27 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase6 -->
+        <test-method signature="testcase8()[pri:0, instance:com.qa.testng.listeners.TestngDemo2@6c1a5b54]" started-at="2023-07-26T02:31:27 IST" name="testcase8" finished-at="2023-07-26T02:31:27 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.qa.testng.listeners.TestngDemo2.testcase8(TestngDemo2.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase8 -->
+        <test-method signature="testcase7()[pri:0, instance:com.qa.testng.listeners.TestngDemo2@6c1a5b54]" started-at="2023-07-26T02:31:27 IST" name="testcase7" finished-at="2023-07-26T02:31:27 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.qa.testng.listeners.TestngDemo2.testcase7(TestngDemo2.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase7 -->
+      </class> <!-- com.qa.testng.listeners.TestngDemo2 -->
+      <class name="com.qa.testng.listeners.TestngDemo1">
+        <test-method signature="testcase1()[pri:0, instance:com.qa.testng.listeners.TestngDemo1@4a883b15]" started-at="2023-07-26T02:31:27 IST" name="testcase1" finished-at="2023-07-26T02:31:27 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method signature="testcase2()[pri:0, instance:com.qa.testng.listeners.TestngDemo1@4a883b15]" started-at="2023-07-26T02:31:27 IST" name="testcase2" finished-at="2023-07-26T02:31:27 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+        <test-method signature="testcase3()[pri:0, instance:com.qa.testng.listeners.TestngDemo1@4a883b15]" started-at="2023-07-26T02:31:27 IST" name="testcase3" finished-at="2023-07-26T02:31:27 IST" duration-ms="33" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.qa.testng.listeners.TestngDemo1.testcase3(TestngDemo1.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+        <test-method signature="testcase4()[pri:0, instance:com.qa.testng.listeners.TestngDemo1@4a883b15]" started-at="2023-07-26T02:31:27 IST" name="testcase4" finished-at="2023-07-26T02:31:27 IST" depends-on-methods="com.qa.testng.listeners.TestngDemo1.testcase3" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.qa.testng.listeners.TestngDemo1.testcase4() on instance com.qa.testng.listeners.TestngDemo1@4a883b15 depends on not successfully finished methods 
+[com.qa.testng.listeners.TestngDemo1.testcase3() on instance com.qa.testng.listeners.TestngDemo1@4a883b15]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.qa.testng.listeners.TestngDemo1.testcase4() on instance com.qa.testng.listeners.TestngDemo1@4a883b15 depends on not successfully finished methods 
+[com.qa.testng.listeners.TestngDemo1.testcase3() on instance com.qa.testng.listeners.TestngDemo1@4a883b15]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase4 -->
+      </class> <!-- com.qa.testng.listeners.TestngDemo1 -->
+    </test> <!-- TestDemo1 -->
+  </suite> <!-- Suite -->
+</testng-results>

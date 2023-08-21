@@ -1,0 +1,15 @@
+package com.pracitce.program;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+		
+		
+		StringBuffer str = new StringBuffer("AppleBoy");
+		System.out.println(str.reverse());
+		
+		
+
+	}
+
+}

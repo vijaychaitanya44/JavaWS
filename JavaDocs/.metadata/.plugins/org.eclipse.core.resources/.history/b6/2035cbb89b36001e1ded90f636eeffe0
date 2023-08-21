@@ -1,0 +1,16 @@
+package com.pracitce.program;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+		
+		
+		StringBuffer str = new StringBuffer("AppleBoy");
+		StringBuilder act = new StringBuilder("junejuly");
+		System.out.println(str.reverse());
+		
+		
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package programs;
+
+public class RemoveSpecial {
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str = "abcd %lmd# yu";
+		
+		
+		
+	}
+
+}

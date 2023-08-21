@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locators group ="OrangeHRM">
+<locator name ="username">
+<type>xpath</type>
+<value>//div[@class="applle"]</value>
+</locator>
+<locator name ="password">
+<type>xpath</type>
+<value>//div[@class="password"]</value>
+</locator>
+<locator name ="username">
+<type>id</type>
+<value>//div[@class="id"]</value>
+</locator>
+
+</locators>

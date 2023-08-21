@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BasicDemo.java&apos; to &apos;com.qa.app.maps.BasicDemo.java&apos;&#x0D;&#x0A;- Original project: &apos;RestApiFramework&apos;&#x0D;&#x0A;- Destination element: &apos;com.qa.app.maps.BasicDemo.java&apos;&#x0D;&#x0A;- Original element: &apos;com.qa.app.maps.BasicDemo.java&apos;" description="Copy compilation unit" destination="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.qa.app.maps{BasicDemo.java" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.qa.app.maps{BasicDemo.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1690891231201" units="1" version="1.0"/>
+</session>

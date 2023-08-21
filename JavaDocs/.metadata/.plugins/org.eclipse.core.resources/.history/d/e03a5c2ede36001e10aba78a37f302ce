@@ -1,0 +1,25 @@
+package com.practice.program;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+public class MissingTwoNumbers {
+
+	public static void main(String[] args) {
+		
+		int arr[] = {2,3,5,4,7};
+		
+		Arrays.sort(arr);
+		Set<Integer> list = new HashSet<>();
+		
+		for(int a:arr) {
+			list.add(a);
+		}
+		
+		
+		
+
+	}
+
+}

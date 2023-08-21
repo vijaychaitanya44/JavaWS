@@ -1,0 +1,11 @@
+package com.qa.rest.Oauth2;
+
+public class Oauth2Demo {
+	
+	public static void main(String[]args) {
+		
+		
+		
+	}
+
+}

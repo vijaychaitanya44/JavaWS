@@ -1,0 +1,10 @@
+package com.practice.program;
+
+public class PrintMissingNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

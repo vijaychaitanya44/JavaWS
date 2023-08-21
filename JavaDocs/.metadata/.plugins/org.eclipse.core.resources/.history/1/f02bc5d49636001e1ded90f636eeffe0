@@ -1,0 +1,27 @@
+package com.pracitce.program;
+
+public class PrintDulpicates {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int arr[] = {4,2,3,1,7,8,2,3,9,1,4,2,4,9,6};
+		
+		
+		for(int i=0;i<arr.length;i++) {
+			boolean dupli = false;
+			for(int j=0;j<i;j++) {
+				
+				if(arr[i]==arr[j]) {
+					dupli=true;
+				}
+			}
+			
+			if(dupli) {
+				System.out.println(arr[i]);
+			}
+		}
+
+	}
+
+}
