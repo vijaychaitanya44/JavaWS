@@ -1,0 +1,15 @@
+package com.qa.rest.specBuilder;
+
+import io.restassured.RestAssured;
+
+public class PreSpecBuilder {
+
+	
+	public static void main(String[]args) {
+		
+		RestAssured.baseURI= "https://rahulshettyacademy.com";
+		
+		
+		
+	}
+}

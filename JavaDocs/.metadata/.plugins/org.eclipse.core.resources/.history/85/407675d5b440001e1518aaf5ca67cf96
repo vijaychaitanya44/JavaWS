@@ -1,0 +1,10 @@
+package com.qa.rest.JIRAspec;
+
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
+
+public class JiraDemo1 {
+	
+	RestAssured.
+
+}

@@ -1,0 +1,35 @@
+package com.qa.rest.JIRAspec;
+
+import io.restassured.RestAssured;
+import io.restassured.filter.session.SessionFilter;
+import io.restassured.response.Response;
+
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+import com.qa.rest.JIRAJsons.LoginCredBody;
+
+public class JiraDemo1 {
+
+	public static void main(String[] args) {
+		RestAssured.baseURI = "https://localhost:8080/";
+SessionFilter session = new SessionFilter();
+		LoginCredBody l = new LoginCredBody();
+		l.setUsername("itguy.gamer");
+		l.setPassword("Javahub44@test#");
+/**
+		Response resp = given().log().all().header("Content-Type", "application/json").body(l).when()
+				.post("rest/auth/1/session").then().log().all().assertThat().statusCode(200).extract().response();
+
+		String res = resp.asString();
+		System.out.println(res);
+		**/
+		
+		String resp = given().log().all().header("Content-Type", "application/json")
+				.body("{ \"username\": \"itguy.gamer\", \"password\": \"Javahub44@test#\" }").filter(session).when()
+				.post("rest/auth/1/session").then().log().all().assertThat().statusCode(200).extract().response()
+				.asString();
+		System.out.println(resp);
+
+	}
+}

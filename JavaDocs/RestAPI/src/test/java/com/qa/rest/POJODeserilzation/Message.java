@@ -3,6 +3,8 @@ package com.qa.rest.POJODeserilzation;
 public class Message {
 	
 	private String message;
+	private String greet;
+	
 	public String getMessage() {
 		return message;
 	}
@@ -15,6 +17,6 @@ public class Message {
 	public void setGreet(String greet) {
 		this.greet = greet;
 	}
-	private String greet;
+
 	
 }

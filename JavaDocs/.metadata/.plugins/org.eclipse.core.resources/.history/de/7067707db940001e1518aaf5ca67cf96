@@ -1,0 +1,5 @@
+package com.qa.rest.JIRAJsons;
+
+public class ResponseJessionBody {
+
+}

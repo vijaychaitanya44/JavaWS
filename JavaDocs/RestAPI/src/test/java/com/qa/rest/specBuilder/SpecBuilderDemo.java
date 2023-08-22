@@ -13,6 +13,7 @@ import com.qa.rest.POJOSerialization.Location;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.filter.session.SessionFilter;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -26,7 +27,7 @@ public class SpecBuilderDemo {
 		RestAssured.baseURI = "https://rahulshettyacademy.com";
 
 		GooglePlaces g = new GooglePlaces();
-
+		
 		g.setAccuracy(50);
 		g.setName("Frontline Aplle house");
 		g.setPhone_number("(+91) 983 893 3937");
@@ -45,10 +46,8 @@ public class SpecBuilderDemo {
 		list.add("shop");
 		g.setTypes(list);
 
-		RequestSpecification req = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com")
-				.addQueryParam("key", "qaclick123").setContentType(ContentType.JSON).build();
-		ResponseSpecification resSpec = new ResponseSpecBuilder().expectStatusCode(200)
-				.expectContentType(ContentType.JSON).build();
+		RequestSpecification req = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com").addQueryParam("key", "qaclick123").setContentType(ContentType.JSON).build();
+		ResponseSpecification resSpec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 
 		RequestSpecification res = given().spec(req).body(g);
 

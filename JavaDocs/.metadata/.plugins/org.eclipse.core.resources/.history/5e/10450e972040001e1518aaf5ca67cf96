@@ -1,0 +1,11 @@
+package com.qa.rest.specBuilder;
+
+public class PreSpecBuilder {
+
+	
+	public static void main(String[]args) {
+		
+		
+		
+	}
+}

@@ -1,0 +1,18 @@
+package com.qa.rest.specBuilder;
+
+import com.qa.rest.POJOSerialization.GooglePlaces;
+
+import io.restassured.RestAssured;
+
+public class PreSpecBuilder {
+
+	
+	public static void main(String[]args) {
+		
+		RestAssured.baseURI= "https://rahulshettyacademy.com";
+		
+		GooglePlaces p = new GooglePlaces();
+				
+		
+	}
+}
